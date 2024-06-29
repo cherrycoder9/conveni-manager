@@ -20,9 +20,9 @@
 2. **편의점 클래스 (ConvenienceStore)**
    - 멤버 변수:
      - `name` (String): 편의점 이름
-     - `products` (Product[]): 제품 목록
+     - `products` (ArrayList<`Product`>): 제품 목록
    - 생성자:
-     - 편의점 이름을 초기화하고, 제품 목록을 빈 배열로 초기화하는 생성자
+     - 편의점 이름을 초기화하고, 제품 목록을 빈 ArrayList로 초기화하는 생성자
    - 메서드:
      - `addProduct(Product product)`: 제품을 목록에 추가
      - `viewProducts()`: 현재 재고 목록을 출력
