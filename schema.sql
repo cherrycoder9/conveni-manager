@@ -5,12 +5,10 @@ USE ConvenienceStoreSimulation;
 -- 테이블 생성
 
 -- Stores 테이블: 편의점 정보를 저장
-CREATE TABLE Stores (
+CREATE TABLE Stores ( 
     store_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
-    cleanliness INT NOT NULL,    -- 청결도 (0-100)
-    friendliness INT NOT NULL,   -- 친절도 (0-100)
-    price INT NOT NULL,          -- 가격 (0-100)
+    price INT NOT NULL,          -- 인수가격/월세 (0-100)
     area INT NOT NULL            -- 면적 (0-100)
 );
 
