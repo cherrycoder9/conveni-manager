@@ -61,3 +61,36 @@ CREATE TABLE Reviews (
     comment TEXT,                         -- 리뷰 코멘트
     FOREIGN KEY (store_id) REFERENCES Stores(store_id)
 );
+
+
+-- 샘플 데이터 삽입
+
+-- Stores 샘플 데이터
+INSERT INTO Stores (name, cleanliness, friendliness, price, area) VALUES
+('편의점A', 90, 80, 70, 50),
+('편의점B', 85, 85, 65, 60),
+('편의점C', 88, 78, 75, 55);
+
+-- Residents 샘플 데이터
+INSERT INTO Residents (name, age, diligence, kindness, aggressiveness, cleanliness_preference, variety_preference) VALUES
+('주민1', 25, 70, 80, 60, 75, 85),
+('주민2', 30, 85, 75, 65, 80, 70),
+('주민3', 40, 65, 85, 55, 70, 75);
+
+-- Employees 샘플 데이터
+INSERT INTO Employees (store_id, name, age, salary, hire_date, diligence, kindness, aggressiveness, skill_level, fatigue) VALUES
+(1, '직원1', 28, 3000.00, 1622519100, 90, 85, 50, 70, 20),
+(2, '직원2', 35, 3500.00, 1625111100, 85, 80, 55, 75, 25),
+(3, '직원3', 40, 3200.00, 1627723500, 80, 75, 60, 65, 30);
+
+-- Products 샘플 데이터
+INSERT INTO Products (store_id, name, quantity, price) VALUES
+(1, '제품1', 100, 1.50),
+(2, '제품2', 200, 2.00),
+(3, '제품3', 150, 1.75);
+
+-- Reviews 샘플 데이터
+INSERT INTO Reviews (store_id, customer_name, rating, comment) VALUES
+(1, '고객1', 5, '아주 만족스러워요.'),
+(2, '고객2', 4, '좋아요.'),
+(3, '고객3', 3, '보통이에요.');
